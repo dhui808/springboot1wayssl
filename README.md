@@ -1,4 +1,4 @@
-# Spring Boot RestTemplate with Outbound SSL
+# Spring Boot RestTemplate with Outbound SSL or Two-way SSL
 ## Server keystore
 Generate self-signed PKCS12 cert, password 123456  
 (Need to provide localhost as a subject alternative name when creating the certificate)  
