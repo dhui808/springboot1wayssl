@@ -38,3 +38,11 @@ Add below properties to application.yml
 keytool -export -alias abcdkey  -keystore abcdkeystore.jks -storepass 123456 -rfc -file client.cert  
 
 keytool -import -alias abcdkey -file client.cert -storetype PKCS12 -keystore globetruststore.p12 -storepass 123456
+
+# Using External Configuration
+On Windows, one can use Windows path convention, i.e, back-slash:  
+trust-store: C:\usr\springboot1wayssl\client\certs\abcdtruststore.jks  
+or forward-slash:  
+trust-store: C:/usr/springboot1wayssl/client/certs/abcdtruststore.jks  
+or UNIX path convention:
+trust-store: /usr/springboot1wayssl/client/certs/abcdtruststore.jks
