@@ -26,3 +26,15 @@ mvn clean package
 ## Browser URL
 https://localjost:8080/
 
+## Two-way ssl (application-2way.yml)
+Add below properties to application.yml  
+
+    trust-store: classpath:globetruststore.p12  
+    trust-store-password: 123456  
+    trust-store-type: PKCS12  
+    client-auth: need  
+
+## Export client cert and import it to server truststore
+keytool -export -alias abcdkey  -keystore abcdkeystore.jks -storepass 123456 -rfc -file client.cert  
+
+keytool -import -alias abcdkey -file client.cert -storetype PKCS12 -keystore globetruststore.p12 -storepass 123456

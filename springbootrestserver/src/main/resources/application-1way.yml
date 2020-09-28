@@ -1,0 +1,6 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:globekeystore.p12
+    key-store-password: 123456
+    key-store-type: PKCS12
