@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  ssl:
+    key-store: classpath:abcdkeystore.jks
+    key-store-password: 123456
+    trust-store: classpath:abcdtruststore.jks
+    trust-store-password: 123456
+    key-store-type: jks
+    trust-store-type: jks
