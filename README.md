@@ -44,5 +44,5 @@ On Windows, one can use Windows path convention, i.e, back-slash:
 trust-store: C:\usr\springboot1wayssl\client\certs\abcdtruststore.jks  
 or forward-slash:  
 trust-store: C:/usr/springboot1wayssl/client/certs/abcdtruststore.jks  
-or UNIX path convention:
+or UNIX path convention:  
 trust-store: /usr/springboot1wayssl/client/certs/abcdtruststore.jks
