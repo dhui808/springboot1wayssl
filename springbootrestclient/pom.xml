@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>springboot2wayssl</groupId>
+	<groupId>springboot1wayssl</groupId>
 	<artifactId>springbootrestclient</artifactId>
 	<version>0.0.1</version>
 	<name>springbootrestclient</name>
