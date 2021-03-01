@@ -25,6 +25,8 @@ public class RestClientCertConfiguration {
 	@Value("${server.ssl.trust-store}")
 	private String truststore;
 	
+	@Value("${server.ssl.trust-store-password}")
+    private String truststorepassword;
 
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder) throws Exception {
@@ -32,7 +34,7 @@ public class RestClientCertConfiguration {
         SSLContext sslContext = SSLContextBuilder
                 .create()
                 .loadKeyMaterial(ResourceUtils.getFile(keystore), keystorepassword.toCharArray(), keystorepassword.toCharArray())
-                .loadTrustMaterial(ResourceUtils.getFile(truststore), keystorepassword.toCharArray())
+                .loadTrustMaterial(ResourceUtils.getFile(truststore), truststorepassword.toCharArray())
                 .build();
 
         /*
